@@ -7,13 +7,13 @@ console.log("hello world");
 // assign methods, new value yang tidak sesuai dengan type
 // Mendefinisikan variabel dengan tipe data
 var nama = "Faris Mas'ud"; // Tipe string
-var umur = 19; // Tipe number
+var umur = 23; // Tipe number
 var isActive = true; // Tipe boolean
 // Menampilkan nilai awal
 console.log("Name: ".concat(nama, ", Age: ").concat(umur, ", Active: ").concat(isActive));
 // Mengubah nilai variabel dengan tipe yang sesuai
-nama = "Faris Mas'ud"; // Valid
-umur = 2; // Valid
+nama = "Faris Masud"; // Valid
+umur = 24; // Valid
 isActive = false; // Valid
 // Menampilkan nilai yang telah diubah
 console.log("Updated Name: ".concat(nama, ", Updated Age: ").concat(umur, ", Active: ").concat(isActive));
@@ -28,3 +28,35 @@ function penjumlahan(a, b) {
 // Menggunakan fungsi penjumlahan
 var hasil = penjumlahan(5, 10);
 console.log("Hasil penjumlahan: ".concat(hasil)); // Output: Hasil penjumlahan: 15
+var data = 'your name';
+data = true;
+function createUser(user) {
+    return user;
+}
+createUser({
+    name: 'Faris Masud',
+    age: 23,
+    isActive: true
+});
+function handleError() {
+    return { status: "berhasil", message: "data benar."
+    };
+}
+var cars = ["Toyota", "Honda", "Mitsubishi"];
+var cars2 = [1, 2, 3];
+var cars3 = [true, false, true];
+//let objCars: object[] = [{name: "Toyota"}, {name: "Honda"}, {name: "Mitsubishi"}]
+var obj = [
+    { name: "Toyota" },
+    { name: "Honda" },
+    { name: "Mitsubishi" }
+];
+// Union
+var status;
+var status2 = "test";
+//Uknown
+var data10;
+data10: "test";
+if (typeof data10 === "string") {
+    data10.toUpperCase();
+}
