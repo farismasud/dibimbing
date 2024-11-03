@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        .card {
+          width: 300px;
+          border: 1px solid grey;
+          border-radius: 15px;
+          padding: 20px;
+          margin-top: 200px;
+        }
+  
+        .pill {
+          background-color: lightblue;
+          width: fit-content;
+          padding: 4px 8px;
+          border-radius: 20px;
+        }
+  
+        .title {
+          text-align: center;
+        }
+  
+        .description {
+          text-align: center;
+          color: grey;
+        }
+        .button {
+          border: 1px solid lightblue;
+          border-radius: 10px;
+          padding: 10px 20px;
+          width: 100%;
+          color: lightblue;
+          background-color: white;
+          margin-top: 40px;
+        }
+        .card-header {
+          position: relative;
+          padding-bottom: 40px;
+        }
+        .image {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+        .overlay{
+          position: absolute;
+          width: 100%;
+          height: 60px;
+          bottom: 0;
+          background-color: linier-gradient(
+            rgba(255, 255, 255, 0)
+            rgba(255, 255, 255, 1));
+        }
+        .container {
+          display: flex;
+          justify-content: center;
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <div class="pill">Bootcamp</div>
+        <h4>Data</h4>
+        <img
+          src="https://dibimbing-cdn.sgp1.digitaloceanspaces.com/media-strapi/0722b7c83284ac04bb452d46ef59e34a.webp"
+          alt="mentor"
+          class="image"
+        />
+      </div>
+      
+      <div class="card-body">
+        <h2 class="title">Bootcamp Front End Web</h2>
+        <p class="description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+          est quam quod facilis vero omnis vel tempora culpa, magnam doloribus!
+        </p>
+        <button class="button">Pelajari Selengkapnya</button>
+      </div>
+    </div>
+    
+</div>
+  </body>
+</html>
