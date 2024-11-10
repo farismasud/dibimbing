@@ -1,0 +1,266 @@
+
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px 208px 0px 208px;
+}
+
+/* ------------------------------------------------------ */
+
+.container1{
+    background-color: black;
+    width: 1fr;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container1-ul{
+    list-style-type: none;  
+    padding: 0;            
+    color: white;
+    font-size: 12px;   
+    margin: 0px;
+    height: 30px;
+    align-content: center;
+}
+
+.container1-ul li {
+    display: inline; 
+    margin-right: 20px;
+}
+
+.social-icons a {
+color: white;
+font-size: 15px;
+text-decoration: none;
+padding: 10px;
+}
+
+/* ------------------------------------------------------ */
+.container2{
+    height: 132px;
+    margin-top: 20px;
+    align-content: center;
+}
+
+.c2-card1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-dibimbing{
+    width: 130.29px;
+    height: 40px;
+}
+
+.container2-ul{
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+    margin: 16px 0px 16px 0px;
+}
+
+.container2-ul li {
+    display: inline; 
+    margin-right: 20px;
+}
+  
+/* ------------------------------------------------------- */
+.container3{
+    display: flex;
+    gap: 40px;
+    margin-top: px;
+    margin-bottom: 100px;
+    background: linear-gradient(180deg, #f1f1f1, #ffffff);
+    padding-top: 50px; /*buat gradient!!!!!!!!!!*/
+}
+
+/* ---------card 1*/
+.img-c3-card1{
+    width: 100%;
+    height: 457px;
+    border-radius: 8px;
+}
+
+.progress-indicator {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    justify-content: center;
+}
+
+.progress-bar {
+    width: 50px; 
+    height: 8px; 
+    background-color: #00a0c6; 
+    border-radius: 5px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #ccc; 
+    border-radius: 50%;
+}
+
+
+/*-----------card 2*/
+.grid-c3-card2{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;    
+    gap: 10px;
+}
+
+.img-sub-c3-card2{
+    width: 238px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+}
+
+.arrow-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #00a0c6; 
+    border-radius: 10px; 
+    font-size: 18px; 
+    color: #00a0c6;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* ----------------------------------------------------------- */
+.container4{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.c4-card1{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.head-c4-card1{
+    display: flex;
+    flex-direction: column;
+}
+
+.button-c4-card1{
+    background-color: #019FC4;
+    height: 37px;
+    width: 97px;
+    border-radius: 8px;
+    border: none;
+
+    
+}
+
+.custom-line-c4-card1{
+    background-color: #019FC4;
+    margin: 0px;
+    height: 5px;
+    border-radius: 8px;
+    border: none;
+}
+
+ 
+.sub-c4-card1{
+    display: flex;
+    gap: 16px;
+}
+
+.img-c4-card1{
+    width: 200px;
+    height: 160px;
+    border-radius: 8px;
+}
+
+.text-c4-card1{
+    width: 546px;
+}
+
+/* card 2 */
+.c4-card2{
+    background-color: #004E60;
+    border-radius: 8px;
+    width: 238px;
+    height: 785px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 16px; */
+}
+
+.sub-c4-card2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    gap: 16px;
+    
+}
+
+.img-c4-card2{
+    width: 206px;
+    height: 80px;
+    border-radius: 8px;
+}
+
+/* ----------------------------------------- */
+.container5{
+    margin-top: 120px;
+}
+
+.container5-1{
+    display: flex;
+    justify-content: space-between
+}
+
+.container5-card2{
+    display: flex;
+    flex-direction: column;
+}
+
+.judul-container5-card2{
+    color: grey;
+    font-size: 16px;
+    margin: 0px;
+}
+
+.container5-card2 ul{
+   padding: 0px;
+}
+
+.container5-card2 ul li{
+    list-style-type: none;
+    font-size: 16px;
+    margin: 0px 0px 16px 0px;
+    color: #019FC4;
+}
+
+.container5-2 p{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 80px 0px;
+    font-size: 14px;
+}
+
+.custom-line {
+    border: none;             /* Hilangkan border default */
+    height: 1px;              /* Ketebalan garis */
+    background-color: rgba(227, 227, 227, 0.204);  /* Transparansi 50% */
+    width: 100%;               /* Panjang garis (80% dari lebar container) */
+    margin: 20px auto;        /* Margin atas dan bawah */
+}
