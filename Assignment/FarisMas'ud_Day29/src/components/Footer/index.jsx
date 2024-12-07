@@ -23,7 +23,7 @@ const Footer = ({ Footers }) => {
             </a>
             <p className="pt-4 ">
               {''}
-              Tanyoe Rasa adalah tempat yang tepat untuk menikmati secangkir kopi yang nikmat. Kami memiliki berbagai macam kopi yang berasal dari berbagai daerah di Indonesia.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
           </div>
           {/* Footer Links */}
