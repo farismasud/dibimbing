@@ -26,19 +26,22 @@ const DetailPage = () => {
   }
 
   return (
-    <div>
+    <div className="container p-4 mx-auto">
       <Navbar />
-      <h1>Detail Page</h1>
-      <h3>ID : {id}</h3>
-      <ul>
+      <h1 className="mb-4 text-3xl font-bold">Detail Page</h1>
+      <h3 className="mb-2 text-xl">ID: {id}</h3>
+      <ul className="pl-5 mb-4 list-disc">
         {data.ingredients?.map((ingredient, index) => (
-          <li key={index}>Ingredient: {ingredient}</li>
+          <li key={index} className="mb-1">Ingredient: {ingredient}</li>
         ))}
       </ul>
-      <h3>Prep Time: {data.prepTimeMinutes || "N/A"}</h3>
-      <h3>Cook Time: {data.cookTimeMinutes || "N/A"}</h3>
-      <h3>Difficulty: {data.difficulty || "N/A"}</h3>
-      <Link to="/">Back Home</Link>
+      <h3 className="mb-2 text-lg">Prep Time: {data.prepTimeMinutes || "N/A"}</h3>
+      <h3 className="mb-2 text-lg">Cook Time: {data.cookTimeMinutes || "N/A"}</h3>
+      <h3 className="mb-4 text-lg">Difficulty: {data.difficulty || "N/A"}</h3>
+      <img src={data.image} alt={data.title} className="object-cover w-56 h-56 mb-4 rounded-lg shadow-lg" />
+      <button className="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700">
+        <Link to="/" className="text-white hover:underline">Back Home</Link>
+      </button>
     </div>
   );
 };

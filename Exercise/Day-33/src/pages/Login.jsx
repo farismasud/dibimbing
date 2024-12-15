@@ -26,7 +26,8 @@ const Login = () => {
         .post("https://dummyjson.com/auth/login", form)
         .then((res) => {
             console.log(res.data)
-            localStorage.setItem('access_token', res?.data?.token)
+            localStorage.setItem('access_token', res.data.accessToken)
+            localStorage.setItem('refresh_token', res.data.refreshToken)
             setSuccess('login success')
             setTimeout(() => {
             navigate('/')
