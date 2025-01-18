@@ -13,8 +13,6 @@ pnpm dev
 # or
 bun dev
 ```
-email: miftahfarhan@gmail.com
-password: qewrty123
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

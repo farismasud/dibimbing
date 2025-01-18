@@ -1,9 +1,10 @@
 import axios from 'axios';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
+import { Food } from './Food.interface';
 
 const FoodPage = () => {
-  const [data, setdata] = useState([]);
+  const [data, setdata] = useState<Food[]>([]);
   const [isLoading, setisLoading] = useState(false);
 
   const router = useRouter();
@@ -12,7 +13,7 @@ const FoodPage = () => {
     const apiUrl: string = process.env.NEXT_PUBLIC_API_URL ?? '';
     setisLoading(true);
     axios
-      .get(apiUrl, {
+      .get(`${apiUrl}/foods`, {
         headers: {
           'Content-Type': 'application/json',
           apiKey: process.env.NEXT_PUBLIC_API_KEY ?? '',
@@ -40,7 +41,7 @@ const FoodPage = () => {
         <p>loading</p>
       ) : (
         <ul>
-          {data.map((item: any) => {
+          {data.map((item: Food) => {
             return (
               <li onClick={() => router.push(`/food/${item.id}`)}>
                 {item.name}
